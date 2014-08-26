@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="sketch.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>JS Etch-A-Sketch</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>JS Etch-A-Sketch</h1>
+			<form class="form-horizontal" id="newgrid" action="#">
+				<div class="form-group">
+					<label for="gridsize">Enter your desired grid size (10-100):</label>
+					<input type="text" class="form-control" id="gridsize">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-default">Give me a new pad!</button>
+				</div>
+			</form>
+			<div class="error alert alert-warning" role="alert">
+				Sorry, please enter a valid size.
+			</div>
+			<div class="gridtable">
+			</div>
+		</div>
+	</body>
+</html>
