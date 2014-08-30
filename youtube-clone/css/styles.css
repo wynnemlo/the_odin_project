@@ -1,0 +1,72 @@
+/* Body */
+body {
+	background: #eee;
+}
+
+
+/**** Sizes ****/
+
+/* Navigation bar */
+nav {
+	height: 30px;
+	width: 100%;
+	background: white;
+	padding: 10px 40px;
+	position: fixed;
+}
+
+/* Main body */
+
+.container {
+	width: 1254px;
+	height: 900px;
+	background: beige;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+section {
+	width: 854px;
+	height: 900px;
+	background: burlywood;
+	float: left;
+}
+
+/* For smaller screens */
+
+@media (max-width: 900px) {
+	.container {
+		width: 1040px;
+	}
+	section {
+		width: 640px;
+	}
+}
+
+/* Side bar */
+aside {
+	width: 400px;
+	height: 900px;
+	background: cornflowerblue;
+	float: right;
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	height: 50px;
+	background: gray;
+}
+
+/**** Stylings ****/
+
+/* Navbar */
+.searchbar {
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: -20px;
+}
+
+#searchbox {
+	line-height: 10px;
+}
