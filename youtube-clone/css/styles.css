@@ -1,6 +1,25 @@
+/***** Fix for box sizing ****/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Body */
 body {
 	background: #eee;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+a {
+	color: #167ac6;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 
@@ -8,47 +27,38 @@ body {
 
 /* Navigation bar */
 nav {
-	height: 30px;
+	height: 50px;
 	width: 100%;
 	background: white;
 	padding: 10px 40px;
 	position: fixed;
-}
+	top: 0px;
+	min-width: 800px;
+	border-bottom: 1px solid #e8e8e8;
+	}
 
 /* Main body */
 
 .container {
-	width: 1254px;
-	height: 900px;
-	background: beige;
-	margin: 0 auto;
+	width: 1050px;
 	overflow: hidden;
+	margin: 50px auto 0px auto;
+	height: auto;
 }
 
 section {
-	width: 854px;
-	height: 900px;
-	background: burlywood;
+	padding: 10px 0 20px 0; 
+	width: 640px;
+	height: auto;
 	float: left;
-}
-
-/* For smaller screens */
-
-@media (max-width: 900px) {
-	.container {
-		width: 1040px;
-	}
-	section {
-		width: 640px;
-	}
 }
 
 /* Side bar */
 aside {
 	width: 400px;
-	height: 900px;
-	background: cornflowerblue;
+	padding: 20px;
 	float: right;
+	height: auto;
 }
 
 /* Footer */
@@ -63,10 +73,53 @@ footer {
 /* Navbar */
 .searchbar {
 	display: inline-block;
-	margin-left: 40px;
-	margin-top: -20px;
+	position: relative;
+	top: -10px;
+	left: 40px;
 }
 
-#searchbox {
-	line-height: 10px;
+/* Sidebar */
+.thumbnails {
+	list-style-type: none;
+}
+
+.thumbnail {
+	float: left;
+}
+
+.item {
+	clear: both;
+}
+
+/* Main video */
+.video {
+
+}
+
+.shadebox {
+	margin: 10px 0;
+	border: 0;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	padding: 20px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/***** Fonts *****/
+.bigtitle {
+	color: #222;
+	font-size: 100%;
+	line-height: normal;
+
+}
+
+.info {
+	line-height: 17px;
+	font-size: 12px;
+}
+
+.title {
+	font-weight: bold;
 }
